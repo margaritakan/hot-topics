@@ -1,0 +1,362 @@
+/* Colors: 
+        Light blue: #38B0FF
+        Blue: #1515E6
+        Purple: #A419FA
+
+Fonts: 
+        font-family: 'Saira Stencil One', Helvetica, Arial, sans-serif;
+        font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+*/
+
+/********************************************************
+                    MOBILE PORTRAIT
+********************************************************/
+
+/* General  */
+body, main {
+        margin: 0;
+        box-sizing: border-box;
+}
+
+img {
+        max-width: 100%;
+        height: auto;
+        filter: drop-shadow(2px 3px 4px #14141425);
+}
+
+h1 {
+        font-family: 'Saira Stencil One', Helvetica, Arial, sans-serif;
+        color: #38B0FF;
+        line-height: 1.6rem;
+        margin: 1.5rem;
+        text-align: center;
+}
+
+h2, h3, h4, h5 { 
+        font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+        line-height: 1.6rem;
+        margin-top: 1rem;
+}
+
+p {
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        line-height: 1.5rem;
+        font-size: 0.75rem;
+}
+
+.tagline-mobile {
+        text-align: center;
+        padding: 0.5rem;
+        padding-top: 0;
+
+        font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+
+}
+
+.tagline-desktop {
+        display: none;
+        text-align: center;
+}
+
+.container {
+        margin: 0 auto;
+        padding: 1rem;
+}
+
+/* Header  */
+.masthead {
+        background: none;
+}
+
+.masthead h2 {
+        margin: 1rem;
+        
+        font-size: 1.4rem;
+        width: 100%;
+
+        margin: 0 auto;
+
+        color: #FFFFFF;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+}
+
+/* Navigation  */
+.main-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0.5rem 1rem;
+}
+
+.main-menu ul li {
+        background: #D6E9FF70;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+}
+
+.main-menu ul li a {
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        color: #000;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        /* padding: 1rem 8rem; */
+        width: 100%;
+}
+
+/* Body  */
+/* -------------- HOME PAGE -------------- */
+article .container {
+        display: flex;
+        flex-direction: column;
+}
+
+article .container .articleContent {
+        margin: 0.5rem;
+}
+
+article .container .articleContent h2 {
+        font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+        text-align: center;
+        margin-bottom: 0.5rem;
+}
+
+article .container .articleContent figure {
+        margin: 1rem 0;
+
+        text-align: center;
+}
+
+article .container .articleContent figure img {
+        width: 300px;
+        height: 300px;
+}
+
+article .container .articleContent figcaption {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 0.7rem;
+        text-align: center;
+        margin-top: 0.4rem;
+}
+
+/* -------------- PORTFOLIO PAGE -------------- */
+article .container .portfolio-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+article .container .portfolio-project {
+        padding: 1rem;
+}
+
+article .container .portfolio-flex figure img {
+        height: 300px;
+        width: 300px;
+        max-width: 300px;
+}
+
+article .container .portfolio-flex figcaption {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0.4rem;
+        text-align: center;
+}
+
+
+/* Footer  */
+footer {
+        text-align: center;
+        font-weight: bold;
+        
+        padding-bottom: 1rem;
+}
+
+footer i {
+        color: #38B0FF;
+}
+
+/********************************************************
+                Tablet and up 35rem
+********************************************************/
+@media only screen and (min-width: 35rem) {
+        /* General  */
+        h1 {
+                font-size: 2.3rem;
+        }
+        h2 {
+                font-size: 1.3rem;
+        }
+        p {
+                font-size: 1rem;
+        }
+
+        .masthead {
+                background:url(../img/head-ph.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+        }
+
+        .tagline-mobile {
+                display: none;
+        }
+
+        .tagline-desktop {
+                display: block;
+                padding: 4rem 4rem 4rem 1.5rem;
+
+                font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+                font-size: 1.5rem;
+                text-align: left;
+
+                color: #FFFFFF;
+                /* background: #38B0FF40; */
+        }
+
+        /* Header  */
+        .masthead {
+                height: 20rem;
+        }
+
+        .masthead .filter {
+                position: absolute;
+                top: 13.5rem;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: max-content;
+                background-color: rgba(4, 4, 4, 0.44);
+        }
+
+        /* Navigation */
+        .main-menu {
+                display: block;
+                text-align: center;
+
+                padding: 0;
+        }
+        
+        .main-menu ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-family: 'Lato', Helvetica, Arial, sans-serif;
+                text-transform: uppercase;
+
+        }
+
+        .main-menu ul li {
+                margin: 1rem;
+                padding: 1rem 4rem;
+                width: 100%
+        }
+
+        .main-menu ul li a {
+                text-decoration: none;
+                color: #000000;
+        }
+
+        /* Body  */
+        /* -------------- HOME PAGE -------------- */
+        article .container .articleContent figure {
+                margin: 0;
+                float: left;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+        }
+
+        article .container figure img {
+                max-width: 400px;
+                width: 400px;
+        }
+
+        article .container .articleContent figcaption {
+                text-align: left;
+        }
+
+        /* -------------- PORTFOLIO PAGE -------------- */
+        article .container .portfolio-flex {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+        }
+
+        article .container .portfolio-flex .portfolio-project {
+                flex-basis: 40%;
+        }
+
+        article .container .portfolio-flex .portfolio-project figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+        
+}
+
+/********************************************************
+                Laptop and up 80rem
+********************************************************/
+@media only screen and (min-width: 80rem) { 
+        h1 {
+                font-size: 2.5rem;
+        }
+
+        h2 {
+                font-size: 1.5rem;
+        }
+
+        p {
+                font-size: 1.25rem;
+        }
+
+        /* Header  */
+        .masthead .filter {
+                top: 9.5rem;
+        }
+
+        .flex-container-header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 auto;
+                max-width: 60%;;
+        }
+
+        .container {
+              margin: 0 auto;
+              max-width: 60%;  
+        }
+
+        .container h1 {
+                text-align: left;
+        }
+
+        /* Body  */
+        /* -------------- HOME PAGE -------------- */
+        article .container .articleContent figure {
+                margin: 0;
+                float: none;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+        }
+
+        article .container .articleContent .article-flex {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+        }
+
+        /* -------------- PORTFOLIO PAGE -------------- */
+        article .container .portfolio-flex .portfolio-project {
+                flex-basis: 30%;
+        }
+}
